@@ -5,8 +5,9 @@ import { projectsData } from '../data/projectsData'
 
 export default function Projects() {
   const variants = {
-    open: {transition:{staggerChildren:0.4, delayChildren:0.6}},
-    closed: {transition:{duration:1}}};
+    open: {transition:{staggerChildren:0.1, delayChildren:0.2}},
+    closed: {}
+  };
   return (
     <motion.ul variants={variants} className='flex flex-row flex-wrap mt-16 w-screen place-content-evenly'>
       {projectsData.map((project, index) =>{
