@@ -12,7 +12,7 @@ export default function Projects() {
     <motion.ul variants={variants} className='flex flex-row flex-wrap mt-16 w-screen place-content-evenly'>
       {projectsData.map((project, index) =>{
         return(
-          <ProjectItem key={index} name={project.name} img={project.img} url={project.url}/>
+          <ProjectItem key={index} name={project.name} img={project.img} urlPage={project.urlPage} urlCode={project.urlCode} languages={project.languages}/>
         )
       })}
     </motion.ul>

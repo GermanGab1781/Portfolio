@@ -1,23 +1,17 @@
 export const projectsData =[
   {
-    name:"1",
+    name:"Alwatoba",
     img:require("../media/ProjectAlwatoba.png"),
-    url:"https://alwatoba-store.web.app/"
+    urlPage:"https://alwatoba-store.web.app/",
+    urlCode:"https://github.com/GermanGab1781/Alwatoba",
+    languages:["React","Tailwind Css","Firebase","Firebase Auth","Framer Motion","React-router-V6"]
   },
   {
-    name:"2",
-    img:require("../media/ReactIcon.png"),
-    url:"https://alwatoba-store.web.app/"
-  },
-  {
-    name:"3",
-    img:require("../media/Tailwind.png"),
-    url:"https://alwatoba-store.web.app/"
-  },
-  {
-    name:"4",
-    img:require("../media/NodeJs.png"),
-    url:"https://alwatoba-store.web.app/"
-  },
-  
+    name:"Budgets App",
+    img:require("../media/ProjectBudgets.png"),
+    urlPage:"https://germangab1781.github.io/budgets",
+    urlCode:"https://github.com/GermanGab1781/budgets",
+    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
+  }
+ 
 ]
