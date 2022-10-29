@@ -9,7 +9,7 @@ export default function Projects() {
     closed: {}
   };
   return (
-    <motion.ul variants={variants} className='flex flex-row flex-wrap xl:mt-16 w-screen place-content-evenly '>
+    <motion.ul variants={variants} className='flex flex-row gap-10 place-content-center flex-wrap xl:my-16 px-10 w-full'>
       {projectsData.map((project, index) =>{
         return(
           <ProjectItem key={index} name={project.name} img={project.img} urlPage={project.urlPage} urlCode={project.urlCode} languages={project.languages}/>

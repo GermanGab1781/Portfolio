@@ -19,6 +19,34 @@ export const projectsData =[
     urlPage:"https://germangab1781.github.io/budgets",
     urlCode:"https://github.com/GermanGab1781/budgets",
     languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
+  },
+  {
+    name:"Budgets App",
+    img:require("../media/ProjectBudgets.png"),
+    urlPage:"https://germangab1781.github.io/budgets",
+    urlCode:"https://github.com/GermanGab1781/budgets",
+    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
+  },
+  {
+    name:"Budgets App",
+    img:require("../media/ProjectBudgets.png"),
+    urlPage:"https://germangab1781.github.io/budgets",
+    urlCode:"https://github.com/GermanGab1781/budgets",
+    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
+  },
+  {
+    name:"Budgets App",
+    img:require("../media/ProjectBudgets.png"),
+    urlPage:"https://germangab1781.github.io/budgets",
+    urlCode:"https://github.com/GermanGab1781/budgets",
+    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
+  },
+  {
+    name:"Budgets App",
+    img:require("../media/ProjectBudgets.png"),
+    urlPage:"https://germangab1781.github.io/budgets",
+    urlCode:"https://github.com/GermanGab1781/budgets",
+    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
   }
  
 ]

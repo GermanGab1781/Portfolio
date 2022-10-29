@@ -11,20 +11,21 @@ import GithubContact from "./media/GithubContact.png"
 import Linkedin from "./media/Linkedin.png"
 import Resume from "./media/Resume.png"
 import Bootstrap from "./media/Bootstrap.png"
-import { useState } from "react";
 import SkillsIcon from "./components/SkillsIcon";
 import ContactIcon from "./components/ContactIcon";
-import { useMediaQuery } from "./MediaQuery";
+import { useState } from "react";
+import { useMediaQuery } from 'react-responsive'
 
 function App() {
   const [menu, setMenu] = useState(false)
   const [about,setAbout] = useState(0)
-  const isMobile = useMediaQuery("(max-width: 500px)");
-  
+  const isMobile = useMediaQuery({query: "(max-width: 800px)"});
+
+
   return (
     <motion.div className="xl:grid xl:grid-rows-2 xl:grid-cols-2 flex flex-col xl:gap-y-10 bg-black text-white w-screen h-screen pb-36 font-Montserrat">
       {/* Title */}
-      <motion.div initial={isMobile ? {x:0,y:"30vw",scale:1.5} : {x:"22vw",y:"30%",scale:1.5}} animate={isMobile ? {x:0,y:0,scale:1} :{x:0,y:0,scale:1}} transition={{delay:1,duration:3}} className="mx-auto xl:col-start-1 flex flex-col xl:h-full h-1/2 2xl:ml-20 2xl:mt-20 xl:ml-16 xl:mt-16 place-content-center text-center">
+      <motion.div initial={isMobile ? {y:"30vw",scale:1.5} : {x:"22vw",y:"30%",scale:1.5}} animate={isMobile ? {y:0,scale:1} :{x:0,y:0,scale:1}} transition={{delay:1,duration:3}} className="mx-auto xl:col-start-1 flex flex-col xl:h-full h-1/2 2xl:ml-20 2xl:mt-20 xl:ml-16 xl:mt-16 place-content-center text-center">
         <span className="2xl:text-8xl xl:text-7xl text-2xl font-bold">Germán Gabriel</span>
         <span className="2xl:text-6xl xl:text-5xl text-xl">Fullstack developer</span>
       </motion.div>
@@ -39,7 +40,7 @@ function App() {
 
         {/* Skills */}
         <motion.div className="">
-          <span className="bg-slate-300 sm:bg-red-800 md:bg-amber-400 lg:bg-lime-500 xl:bg-sky-500 2xl:bg-violet-700 p-5"></span>
+          {/* <span className="bg-slate-300 sm:bg-red-800 md:bg-amber-400 lg:bg-lime-500 xl:bg-sky-500 2xl:bg-violet-700 p-5"></span> */}
           <span className="2xl:text-3xl text-2xl font-semibold">Skills</span>
           <div className="flex flex-row flex-wrap">
             <SkillsIcon name="React" img={ReactIcon}/>
