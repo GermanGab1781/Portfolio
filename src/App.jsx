@@ -14,44 +14,33 @@ import Bootstrap from "./media/Bootstrap.png"
 import { useState } from "react";
 import SkillsIcon from "./components/SkillsIcon";
 import ContactIcon from "./components/ContactIcon";
+import { useMediaQuery } from "./MediaQuery";
 
 function App() {
   const [menu, setMenu] = useState(false)
   const [about,setAbout] = useState(0)
-
-  const variants = {
-    nameInitial: {x:50,y:50,scale:1.5},
-    nameAnimate: {x:0,y:0, scale:1},
-    elseInitial: {opacity:0},
-    elseAnimate: {opacity:1}
-  };
-
+  const isMobile = useMediaQuery("(max-width: 500px)");
+  
   return (
-    <motion.div className="grid grid-cols-2 grid-rows-2 bg-black text-white w-screen h-screen pb-36">
- 
+    <motion.div className="xl:grid xl:grid-rows-2 xl:grid-cols-2 flex flex-col xl:gap-y-10 bg-black text-white w-screen h-screen pb-36 font-Montserrat">
       {/* Title */}
-      <motion.div initial={"nameInitial"} animate={"nameAnimate"} transition={{delay:1,duration:3}} variants={variants} className=" col-start-1 ml-16 mt-16">
-          <div className="place-content-evenly flex flex-col">
-            <span className="m-auto xl:text-7xl">German Gabriel</span>
-            <span className="m-auto xl:text-5xl">Fullstack developer</span>
-          </div>
-        </motion.div>
+      <motion.div initial={isMobile ? {x:0,y:"30vw",scale:1.5} : {x:"22vw",y:"30%",scale:1.5}} animate={isMobile ? {x:0,y:0,scale:1} :{x:0,y:0,scale:1}} transition={{delay:1,duration:3}} className="mx-auto xl:col-start-1 flex flex-col xl:h-full h-1/2 2xl:ml-20 2xl:mt-20 xl:ml-16 xl:mt-16 place-content-center text-center">
+        <span className="2xl:text-8xl xl:text-7xl text-2xl font-bold">Germán Gabriel</span>
+        <span className="2xl:text-6xl xl:text-5xl text-xl">Fullstack developer</span>
+      </motion.div>
      
         {/* Picture */}
-        <motion.div initial={"elseInitial"} animate={"elseAnimate"} variants={variants} transition={{delay:3.5, duration:0.3}} className="h-full col-start-2 row-start-1 row-end-3 m-auto mt-10">
-
-          <img className=" bg-blue-700 py-1 h-full shadow-lg shadow-blue-700 rounded-md" src={Perfil} alt="German Gabriel"/>
-
-          
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:3.5, duration:0.3}} className="xl:h-full h-64 xl:row-start-1 xl:row-end-3 xl:m-auto xl:mt-10">
+          <img className="bg-blue-700 py-1 h-full shadow-lg shadow-blue-700 rounded-md xl:m-0 m-auto" src={Perfil} alt="German Gabriel"/>         
         </motion.div>
 
       {/* About me */}
-      <motion.div initial={"elseInitial"} animate={"elseAnimate"} variants={variants} transition={{delay:3.5, duration:0.3}} className=" row-start-2 col-start-1 grid grid-cols-2 text-center ml-16">
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:3.5, duration:0.3}} className="xl:row-start-2 xl:col-start-1 xl:grid xl:grid-cols-2 h-full w-full text-center xl:mx-auto m-auto xl:ml-16 mt-5 xl:gap-x-2 place-content-center">
 
         {/* Skills */}
         <motion.div className="">
-          <span className="sm:bg-red-800 md:bg-amber-400 lg:bg-lime-500 xl:bg-sky-500 2xl:bg-violet-700 p-5"></span>
-          <span className="text-3xl font-semibold">Skills</span>
+          <span className="bg-slate-300 sm:bg-red-800 md:bg-amber-400 lg:bg-lime-500 xl:bg-sky-500 2xl:bg-violet-700 p-5"></span>
+          <span className="2xl:text-3xl text-2xl font-semibold">Skills</span>
           <div className="flex flex-row flex-wrap">
             <SkillsIcon name="React" img={ReactIcon}/>
             <SkillsIcon name="Tailwind Css" img={Tailwind}/>
@@ -63,9 +52,9 @@ function App() {
         </motion.div>
 
         {/* Me */}
-        <motion.div className="h-full w-full  px-5">
-          <span className="text-3xl font-semibold">{about === 0 && "About"}{about === 1 && "My stack"}{about === 2 && "Contact"}</span>
-          <div className={about === 0 ?"relative  m-auto xl:h-48 xl":"opacity-0 absolute invisible"}>
+        <motion.div className="h-full w-full px-5">
+          <span className="2xl:text-3xl text-2xl font-semibold">{about === 0 && "About"}{about === 1 && "My stack"}{about === 2 && "Contact"}</span>
+          <div className={about === 0 ?"relative m-auto xl:h-48":"opacity-0 absolute invisible"}>
             <div className="flex flex-col text-start">
               <span>I like to work in a team based enviorment learning from everything and everyone.</span>
               <span>Competitive in a healthy manner pushing to improve myself.</span>
@@ -73,7 +62,7 @@ function App() {
             </div>            
           </div>
           
-          <div className={about === 1 ?"relative  m-auto xl:h-48 xl ":"opacity-0 absolute invisible"}>           
+          <div className={about === 1 ?"relative m-auto xl:h-48":"opacity-0 absolute invisible"}>           
             <div className="flex flex-col text-start">
               <span>Capable understanding of programming techniques and common logics.</span>
               <span>Advanced english, writing, speaking, etc.</span>
@@ -81,7 +70,7 @@ function App() {
             </div>
           </div>
 
-          <div className={about === 2 ?"relative  m-auto xl:h-48 xl ":"opacity-0 absolute invisible"}>
+          <div className={about === 2 ?"relative m-auto xl:h-48 visible":"opacity-0 absolute invisible"}>
             <div className="flex flex-col text-start m-auto">
               <div className="flex flex-row flex-wrap">
                 <ContactIcon name="Github" img={GithubContact} />
@@ -93,7 +82,7 @@ function App() {
             </div>
           </div>
 
-          <div className="flex">
+          <div className="flex place-content-center whitespace-nowrap gap-x-2">
             <button className={about === 0 ?"border pointer-events-none border-blue-700 rounded-md p-1 w-fit m-auto mt-2 text-slate-500":"border border-blue-400 rounded-md p-1 transition-all hover:border-blue-500 hover:text-slate-300 w-fit m-auto mt-2"} onClick={()=>setAbout(0)}>About me</button>
             <button className={about === 1 ?"border pointer-events-none border-blue-700 rounded-md p-1 w-fit m-auto mt-2 text-slate-500":"border border-blue-400 rounded-md p-1 transition-all hover:border-blue-500 hover:text-slate-300 w-fit m-auto mt-2"} onClick={()=>setAbout(1)}>My stack</button>
             <button className={about === 2 ?"border pointer-events-none border-blue-700 rounded-md p-1 w-fit m-auto mt-2 text-slate-500":"border border-blue-400 rounded-md p-1 transition-all hover:border-blue-500 hover:text-slate-300 w-fit m-auto mt-2"} onClick={()=>setAbout(2)}>Contact me</button>
