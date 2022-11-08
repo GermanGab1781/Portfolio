@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f3ed3b5b.css",
-    "main.js": "/Portfolio/static/js/main.eb43e3ff.js",
+    "main.js": "/Portfolio/static/js/main.31858afe.js",
     "static/media/ProjectAlwatoba.png": "/Portfolio/static/media/ProjectAlwatoba.2f8278d5bdeed8dc95a6.png",
     "static/media/Perfil.png": "/Portfolio/static/media/Perfil.a78a680f1d533f9e5c1f.png",
     "static/media/Tailwind.png": "/Portfolio/static/media/Tailwind.3549d9e451d7abb96934.png",
@@ -11,15 +11,16 @@
     "static/media/Resume.png": "/Portfolio/static/media/Resume.41fc21f177f39586bfeb.png",
     "static/media/Linkedin.png": "/Portfolio/static/media/Linkedin.668fe687f5d2082add1c.png",
     "static/media/Firebase.png": "/Portfolio/static/media/Firebase.18e8cd693c55dbadc622.png",
+    "static/media/ProjectMovieDbApi.jpg": "/Portfolio/static/media/ProjectMovieDbApi.9586f37953e1fe0ada36.jpg",
     "static/media/ReactIcon.png": "/Portfolio/static/media/ReactIcon.20adfb35ae6a6e5817bf.png",
     "static/media/NodeJs.png": "/Portfolio/static/media/NodeJs.07d152a8a036951b8d14.png",
     "static/media/ProjectBudgets.png": "/Portfolio/static/media/ProjectBudgets.065b7207c3265470e758.png",
     "index.html": "/Portfolio/index.html",
     "main.f3ed3b5b.css.map": "/Portfolio/static/css/main.f3ed3b5b.css.map",
-    "main.eb43e3ff.js.map": "/Portfolio/static/js/main.eb43e3ff.js.map"
+    "main.31858afe.js.map": "/Portfolio/static/js/main.31858afe.js.map"
   },
   "entrypoints": [
     "static/css/main.f3ed3b5b.css",
-    "static/js/main.eb43e3ff.js"
+    "static/js/main.31858afe.js"
   ]
 }
