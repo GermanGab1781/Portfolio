@@ -4,7 +4,7 @@ export const projectsData =[
     img:require("../media/ProjectAlwatoba.png"),
     urlPage:"https://alwatoba-store.web.app/",
     urlCode:"https://github.com/GermanGab1781/Alwatoba",
-    languages:["React","Tailwind Css","Firebase","Firebase Auth","Framer Motion","React-router-V6"]
+    languages:["React","Tailwind Css","Firebase","Firebase Auth","Framer Motion","React-router-V6","SweetAlert"]
   },
   {
     name:"Budgets App",
@@ -14,39 +14,11 @@ export const projectsData =[
     languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
   },
   {
-    name:"Budgets App",
-    img:require("../media/ProjectBudgets.png"),
-    urlPage:"https://germangab1781.github.io/budgets",
-    urlCode:"https://github.com/GermanGab1781/budgets",
-    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
+    name:"API consumption",
+    img:require("../media/ProjectMovieDbApi.jpg"),
+    urlPage:"https://germangab1781.github.io/movieAPI",
+    urlCode:"https://github.com/GermanGab1781/movieAPI",
+    languages:["React","Axios","API","Tailwind Css","Framer Motion","SweetAlert","React-router-V6"]
   },
-  {
-    name:"Budgets App",
-    img:require("../media/ProjectBudgets.png"),
-    urlPage:"https://germangab1781.github.io/budgets",
-    urlCode:"https://github.com/GermanGab1781/budgets",
-    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
-  },
-  {
-    name:"Budgets App",
-    img:require("../media/ProjectBudgets.png"),
-    urlPage:"https://germangab1781.github.io/budgets",
-    urlCode:"https://github.com/GermanGab1781/budgets",
-    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
-  },
-  {
-    name:"Budgets App",
-    img:require("../media/ProjectBudgets.png"),
-    urlPage:"https://germangab1781.github.io/budgets",
-    urlCode:"https://github.com/GermanGab1781/budgets",
-    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
-  },
-  {
-    name:"Budgets App",
-    img:require("../media/ProjectBudgets.png"),
-    urlPage:"https://germangab1781.github.io/budgets",
-    urlCode:"https://github.com/GermanGab1781/budgets",
-    languages:["React","UseContext","Local Storage","Bootstrap","CRUD"]
-  }
  
 ]
