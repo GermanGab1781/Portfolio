@@ -20,5 +20,12 @@ export const projectsData =[
     urlCode:"https://github.com/GermanGab1781/movieAPI",
     languages:["React","Axios","API","Tailwind Css","Framer Motion","SweetAlert","React-router-V6"]
   },
+  {
+    name:"Library App",
+    img:require("../media/LibraryProject.jpg"),
+    urlPage:"https://germangab1781.github.io/librarycommerce",
+    urlCode:"https://github.com/GermanGab1781/librarycommerce",
+    languages:["React","Node JS","Sequelize","Express","Axios","MySql","SweetAlert","React-router-V6"]
+  },
  
 ]
