@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SliderMenu from "./components/SliderMenu";
-import Perfil from "./media/Perfil.png"
+import Perfil from "./media/Perfil.jpeg"
 import Firebase from "./media/Firebase.png"
 import ReactIcon from "./media/ReactIcon.png"
 import Tailwind from "./media/Tailwind.png"
