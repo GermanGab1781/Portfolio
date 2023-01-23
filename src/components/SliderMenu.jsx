@@ -17,7 +17,7 @@ export default function SliderMenu({handleClose , state}) {
       ?"fixed bottom-0 w-screen h-full text-center bg-black transition-all ease-in-out duration-1000 overflow-y-auto"
       :"fixed bottom-0 w-screen h-16 text-center bg-blue-700 transition-all ease-in-out duration-1000"
     }>
-      <button className={state ?'xl:text-3xl xl:mt-2 p-1 mt-10 transition-all' :'xl:text-3xl xl:mt-2 p-1 transition-all'} onClick={handleClose}>{state ? "Go back"  :"My projects" }</button>
+      <button className={state ?'xl:text-3xl xl:mt-2 p-1 mt-10 transition-all font-semibold' :'xl:text-3xl text-2xl xl:mt-2 p-1 font-semibold transition-all animate-pulse'} onClick={handleClose}>{state ? "Go back"  :"My projects" }</button>
       <motion.div className='mt-10 ' animate={state ? "open" : "closed"} variants={variants}>
         <Projects/>
       </motion.div>
