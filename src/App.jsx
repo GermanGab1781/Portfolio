@@ -73,7 +73,7 @@ function App() {
 
           <div className={about === 2 ?"relative m-auto xl:h-48 visible":"opacity-0 absolute invisible"}>
             <div className="flex flex-col text-start my-auto">
-              <div className="flex flex-row flex-wrap mt-10">
+              <div className="flex flex-row mt-10 gap-x-3">
                 <ContactIcon link={"https://github.com/GermanGab1781"} name="Github" img={GithubContact} />
                 <ContactIcon link={"https://docdro.id/l4FvPpU"} name="Resume" img={Resume} />
                 <ContactIcon link={"mailto:germangabriel1998@gmail.com"} name="Email" img={Email} />
