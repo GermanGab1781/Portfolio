@@ -75,7 +75,7 @@ function App() {
             <div className="flex flex-col text-start my-auto">
               <div className="flex flex-row mt-10 gap-x-3">
                 <ContactIcon link={"https://github.com/GermanGab1781"} name="Github" img={GithubContact} />
-                <ContactIcon link={"https://docdro.id/l4FvPpU"} name="Resume" img={Resume} />
+                <ContactIcon link={"https://www.docdroid.net/HHfQyf9/curriculumvitaegermangabrielshrt-pdf"} name="Resume" img={Resume} />
                 <ContactIcon link={"mailto:germangabriel1998@gmail.com"} name="Email" img={Email} />
                 <ContactIcon link={"https://www.linkedin.com/in/germ%C3%A1n-gabriel-9b3b1a160/"} name="Linkedin" img={Linkedin} />
               </div>          
