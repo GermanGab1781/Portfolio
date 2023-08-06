@@ -75,7 +75,7 @@ function App() {
             <div className="flex flex-col text-start my-auto">
               <div className="flex flex-row mt-10 gap-x-3">
                 <ContactIcon link={"https://github.com/GermanGab1781"} name="Github" img={GithubContact} />
-                <ContactIcon link={"https://docdro.id/ZgTr4bW"} name="Resume" img={Resume} />
+                <ContactIcon link={"https://drive.google.com/drive/folders/1mYA43BqnqKkW0BNrH9wuLwdnhcs66qZ3?usp=sharing"} name="Resume" img={Resume} />
                 <ContactIcon link={"mailto:germangabriel1998@gmail.com"} name="Email" img={Email} />
                 <ContactIcon link={"https://www.linkedin.com/in/germ%C3%A1n-gabriel-9b3b1a160/"} name="Linkedin" img={Linkedin} />
               </div>          
@@ -87,7 +87,7 @@ function App() {
             <button className={about === 1 ?"border pointer-events-none border-blue-700 rounded-md p-1 w-fit m-auto mt-2 text-slate-500":"border border-blue-400 rounded-md p-1 transition-all hover:border-blue-500 hover:text-slate-300 w-fit m-auto mt-2"} onClick={()=>setAbout(1)}>My stack</button>
             <button className={about === 2 ?"border pointer-events-none border-blue-700 rounded-md p-1 w-fit m-auto mt-2 text-slate-500":"border border-blue-400 rounded-md p-1 transition-all hover:border-blue-500 hover:text-slate-300 w-fit m-auto mt-2"} onClick={()=>setAbout(2)}>Contact/Resume</button>
           </div>
-        </motion.div> 
+        </motion.div>
 
       </motion.div>
 
