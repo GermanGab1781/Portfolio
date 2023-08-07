@@ -2,7 +2,7 @@ export const projectsData =[
   {
     name:"Ecommerce",
     img:require("../media/ProjectAlwatoba.png"),
-    urlPage:"https://alwatoba.vercel.app/alwatoba",
+    urlPage:"https://alwatoba-store.web.app",
     urlCode:"https://github.com/GermanGab1781/Alwatoba",
     languages:["React","Firebase","Firebase Auth","Tailwind Css","Framer Motion","React-router-V6","SweetAlert"]
   },
