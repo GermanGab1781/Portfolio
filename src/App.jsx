@@ -23,7 +23,7 @@ function App() {
 
 
   return (
-    <motion.div className="xl:grid xl:grid-rows-2 xl:grid-cols-2 flex flex-col xl:gap-y-10 bg-black text-white w-screen h-screen pb-36 font-Montserrat">
+    <motion.div className="xl:grid xl:grid-rows-2 xl:grid-cols-2 flex flex-col xl:gap-y-10 bg-black text-white w-screen min-h-screen pb-36 font-Montserrat">
       {/* Title */}
       <motion.div initial={isMobile ? { y: "30vw", scale: 1.5 } : { x: "22vw", y: "30%", scale: 1.5 }} animate={isMobile ? { y: 0, scale: 1 } : { x: 0, y: 0, scale: 1 }} transition={{ delay: 1, duration: 3 }} className="mx-auto xl:col-start-1 flex flex-col xl:h-full h-1/2 2xl:ml-20 2xl:mt-20 xl:ml-16 xl:mt-16 place-content-center text-center">
         <span className="2xl:text-8xl xl:text-7xl text-2xl font-bold text-blue-700">Germán Gabriel</span>
@@ -31,8 +31,8 @@ function App() {
       </motion.div>
 
       {/* Picture */}
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3.5, duration: 0.3 }} className=" xl:h-full h-64 xl:row-start-1 xl:row-end-3 xl:m-auto xl:mt-10">
-        <img className="bg-blue-700 py-1 h-full shadow-lg shadow-blue-700 rounded-md xl:m-0 m-auto" src={Perfil} alt="German Gabriel" />
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3.5, duration: 0.3 }} className=" xl:h-full xl:w-10/12 h-64 xl:row-start-1 xl:row-end-3 xl:m-auto xl:mt-10">
+        <img className="bg-blue-700 py-1 h-full shadow-lg shadow-blue-700 rounded-md m-auto" src={Perfil} alt="German Gabriel" />
       </motion.div>
 
       {/* About me */}
