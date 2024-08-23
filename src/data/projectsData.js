@@ -3,7 +3,7 @@ export const projectsData = [
     name: "Ecommerce",
     img: require("../media/TechEco.png"),
     urlPage: "https://tech-ecommerce-alpha.vercel.app/",
-    urlCode: "https://github.com/GermanGab1781/Alwatoba",
+    urlCode: "https://github.com/GermanGab1781/tech-ecommerce/",
     languages: ["React", "Firebase", "Firebase Auth", "Tailwind Css", "React-router-V6", "SweetAlert"]
   },
   {
@@ -20,6 +20,7 @@ export const projectsData = [
     urlCode: "https://github.com/GermanGab1781/librarycommerce",
     languages: ["React", "Node JS", "Express", "Axios", "Tailwind Css", "Sequelize", "MySql", "SweetAlert", "React-router-V6"]
   },
+  /*
   {
     name: "API Consumption",
     img: require("../media/ProjectMovieDbApi.jpg"),
@@ -27,7 +28,7 @@ export const projectsData = [
     urlCode: "https://github.com/GermanGab1781/movieAPI",
     languages: ["React", "Axios", "API", "Tailwind Css", "Framer Motion", "SweetAlert", "React-router-V6"]
   },
-  /* {
+   {
     name: "Budgets App",
     img: require("../media/ProjectBudgets.png"),
     urlPage: "https://budgets-khaki.vercel.app/",
