@@ -12,14 +12,7 @@ export const projectsData = [
     urlPage: "https://three-js-kayn.vercel.app/",
     urlCode: "https://github.com/GermanGab1781/threeJsKayn",
     languages: ["React", "ThreeJs", "Tailwind Css", "Framer Motion", "React-router-V6"]
-  },
-  {
-    name: "Blog App",
-    img: require("../media/ProjectBlogs.jpg"),
-    urlPage: "https://blog-app-gold-two.vercel.app/",
-    urlCode: "https://github.com/GermanGab1781/librarycommerce",
-    languages: ["React", "Node JS", "Express", "Axios", "Tailwind Css", "Sequelize", "MySql", "SweetAlert", "React-router-V6"]
-  },
+  }
   /*
   {
     name: "API Consumption",

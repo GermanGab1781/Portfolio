@@ -20,6 +20,7 @@ function App() {
   const [menu, setMenu] = useState(false)
   const [about, setAbout] = useState(0)
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
+  const titles = ["About","My Stack","Contact"];
 
 
   return (
@@ -54,7 +55,9 @@ function App() {
 
         {/* Me */}
         <motion.div className="h-full w-full px-5">
-          <span className="2xl:text-3xl text-2xl font-semibold text-blue-700">{about === 0 && "About"}{about === 1 && "My stack"}{about === 2 && "Contact"}</span>
+          <span className="2xl:text-3xl text-2xl font-semibold text-blue-700">
+            {titles[about]}
+          </span>
           <div className={about === 0 ? "relative m-auto xl:h-48" : "opacity-0 absolute invisible"}>
             <div className="flex flex-col text-start">
               <span>I like to work in a team based enviorment learning from everything and everyone.</span>
