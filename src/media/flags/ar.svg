@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40">
+  <rect width="60" height="40" fill="#74acdf"/>
+  <rect y="13.33" width="60" height="13.33" fill="#fff"/>
+  <g transform="translate(30,20)">
+    <circle r="3.2" fill="#f6b40e"/>
+    <g fill="#f6b40e">
+      <g id="r">
+        <polygon points="0,-5.4 0.7,-3.4 -0.7,-3.4"/>
+        <polygon points="0,-5.4 -0.7,-3.4 0.7,-3.4" transform="rotate(180)"/>
+      </g>
+      <use href="#r" transform="rotate(30)"/>
+      <use href="#r" transform="rotate(60)"/>
+      <use href="#r" transform="rotate(90)"/>
+      <use href="#r" transform="rotate(120)"/>
+      <use href="#r" transform="rotate(150)"/>
+    </g>
+  </g>
+</svg>

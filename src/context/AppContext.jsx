@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 const translations = {
   en: {
@@ -16,9 +16,10 @@ const translations = {
       "Independent, but ready to help others and ask for help if needed."
     ],
     stackText: [
-      "Capable understanding of programming techniques and common logics.",
-      "Advanced english, writing, speaking, etc.",
-      "Clever usage of languages and libraries documentations."
+      "Solid foundation in programming logic and design patterns, which lets me understand, validate, and quickly adapt any code — including AI-generated code.",
+      "I use tools like Claude Code, ChatGPT, and Gemini critically, not as a black box, thanks to that technical grounding.",
+      "Advanced English (reading, writing, and speaking).",
+      "Strong ability to navigate technical and library documentation to solve problems independently."
     ],
     contactGithub: "Github",
     contactResume: "Resume",
@@ -43,9 +44,10 @@ const translations = {
       "Independiente, pero dispuesto a ayudar y a pedir ayuda si es necesario."
     ],
     stackText: [
-      "Buen manejo de técnicas de programación y lógica general.",
-      "Inglés avanzado, escrito, hablado, etc.",
-      "Uso inteligente de documentación de lenguajes y librerías."
+      "Base sólida en lógica de programación y patrones de diseño, que me permite entender, validar y adaptar rápido cualquier código — incluido el generado con IA.",
+      "Uso herramientas como Claude Code, ChatGPT y Gemini de forma crítica, no como caja negra, gracias a esa base técnica.",
+      "Inglés avanzado (lectura, escritura y conversación).",
+      "Buen manejo de documentación técnica y de librerías para resolver problemas de forma autónoma."
     ],
     contactGithub: "Github",
     contactResume: "CV",
@@ -60,20 +62,14 @@ const translations = {
 const AppContext = createContext(null);
 
 export function AppProvider({ children }) {
-  const [theme, setTheme] = useState('dark');
   const [lang, setLang] = useState('en');
   const [galleryOpen, setGalleryOpen] = useState(false);
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-  }, [theme]);
-
-  const toggleTheme = () => setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
   const toggleLang = () => setLang(prev => (prev === 'en' ? 'es' : 'en'));
   const t = (key) => translations[lang][key];
 
   return (
-    <AppContext.Provider value={{ theme, toggleTheme, lang, toggleLang, t, galleryOpen, setGalleryOpen }}>
+    <AppContext.Provider value={{ lang, toggleLang, t, galleryOpen, setGalleryOpen }}>
       {children}
     </AppContext.Provider>
   );
