@@ -10,6 +10,8 @@ import GithubContact from "./media/GithubContact.png"
 import Linkedin from "./media/Linkedin.png"
 import Resume from "./media/Resume.png"
 import ThreeJs from "./media/skills/ThreeJs.png"
+import Claude from "./media/skills/Claude.png"
+import NestJs from "./media/skills/NestJs.webp"
 import UsFlag from "./media/flags/us.svg"
 import ArFlag from "./media/flags/ar.svg"
 import SkillsIcon from "./components/SkillsIcon";
@@ -66,6 +68,8 @@ function App() {
             <SkillsIcon name="Next.js" img={Nextjs} />
             <SkillsIcon name="Tailwind Css" img={Tailwind} />
             <SkillsIcon name="ThreeJs" img={ThreeJs} />
+            <SkillsIcon name="NestJs" img={NestJs} />
+            <SkillsIcon name="Claude" img={Claude} />
             <SkillsIcon name="Git" img={Github} />
           </div>
         </motion.div>
